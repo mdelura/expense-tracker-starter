@@ -1,3 +1,23 @@
+:root {
+  --bg: #060b16;
+  --bg-alt: #0c1525;
+  --surface: rgba(255, 255, 255, 0.034);
+  --surface-hover: rgba(255, 255, 255, 0.062);
+  --border: rgba(255, 255, 255, 0.072);
+  --border-strong: rgba(255, 255, 255, 0.13);
+  --text: #dde6f5;
+  --text-dim: #8898b8;
+  --text-muted: #4a5a78;
+  --income: #34d399;
+  --income-bg: rgba(52, 211, 153, 0.1);
+  --expense: #f87171;
+  --expense-bg: rgba(248, 113, 113, 0.1);
+  --balance: #fbbf24;
+  --balance-bg: rgba(251, 191, 36, 0.1);
+  --radius: 14px;
+  --radius-sm: 8px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +25,13 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #ffffff;
-  color: #333;
+  font-family: 'Manrope', system-ui, sans-serif;
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(ellipse 60% 40% at 15% -5%, rgba(52, 211, 153, 0.055) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 35% at 85% 105%, rgba(251, 191, 36, 0.04) 0%, transparent 55%);
+  background-attachment: fixed;
+  color: var(--text);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
 }
